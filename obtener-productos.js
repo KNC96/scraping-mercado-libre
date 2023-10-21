@@ -15,7 +15,7 @@ let obtenerProductos = () => {
         let items = [];
         $(".ui-search-layout__item").each(function () {
           let titulo = $(this).find(".ui-search-item__title").text();
-          let precio = $(this).find(".ui-search-price--size-medium").text();
+          let precio = $(this).find(".ui-search-price__part--medium").text();
           let imagen = $(this)
             .find(".ui-search-result__image img")
             .attr("data-src");
