@@ -34,6 +34,7 @@ let obtenerProductos = () => {
           items.push(item);
         });
         resolve(items);
+        contador = 0;
       } else {
         reject(err);
       }
